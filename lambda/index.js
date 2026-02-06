@@ -1,8 +1,8 @@
-// Imports - bring in the tools we need
+// Imports - Bring in the tools we need
 const { DynamoDBClient, PutItemCommand } = require("@aws-sdk/client-dynamodb");
 const { SESClient, SendEmailCommand } = require("@aws-sdk/client-ses");
 
-// Initialization - create connections to AWS services
+// Initialization - Create connections to AWS services
 const dynamoDB = new DynamoDBClient({});
 const ses = new SESClient({});
 
@@ -26,7 +26,7 @@ exports.handler = async (event) => {
       }
     }));
 
-    // Send confirmation email to customer
+    // Send Confirmation Email to Customer
     await ses.send(new SendEmailCommand({
       Source: process.env.SENDER_EMAIL,
       Destination: { ToAddresses: [email] },
@@ -38,7 +38,7 @@ exports.handler = async (event) => {
       }
     }));
 
-    // Send notification to business
+    // Send Notification to Business
     await ses.send(new SendEmailCommand({
       Source: process.env.SENDER_EMAIL,
       Destination: { ToAddresses: [process.env.BUSINESS_EMAIL] },
@@ -50,6 +50,7 @@ exports.handler = async (event) => {
       }
     }));
 
+    // Return Success Response
     return {
       statusCode: 200,
       headers: {
@@ -59,6 +60,7 @@ exports.handler = async (event) => {
       body: JSON.stringify({ message: "Success!", inquiryId })
     };
 
+    // Error Handling
   } catch (error) {
     console.error("Error:", error);
     return {
@@ -71,3 +73,4 @@ exports.handler = async (event) => {
     };
   }
 };
+
