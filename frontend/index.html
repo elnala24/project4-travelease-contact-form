@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TravelEase - Plan Your Dream Trip</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">TravelEase</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Your Next Adventure Starts Here</h1>
+        <p>Let us craft the perfect travel experience for you. From exotic beaches to mountain retreats, we handle every detail so you can focus on making memories.</p>
+        <a href="#contact" class="btn">Get in Touch</a>
+      </div>
+    </section>
+
+    <section id="destinations" class="destinations">
+      <h2>Popular Destinations</h2>
+      <div class="destinations-grid">
+        <div class="destination-card">
+          <div class="card-icon">&#9968;</div>
+          <h3>Mountain Escapes</h3>
+          <p>Breathtaking peaks, fresh air, and unforgettable hiking trails await you.</p>
+        </div>
+        <div class="destination-card">
+          <div class="card-icon">&#9748;</div>
+          <h3>Beach Getaways</h3>
+          <p>Crystal-clear waters and white sandy beaches for the ultimate relaxation.</p>
+        </div>
+        <div class="destination-card">
+          <div class="card-icon">&#127963;</div>
+          <h3>City Adventures</h3>
+          <p>Explore vibrant cultures, world-class dining, and iconic landmarks.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Plan Your Trip</h2>
+      <p class="contact-subtitle">Tell us about your dream vacation and we'll make it happen.</p>
+
+      <form id="contact-form">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="John Doe" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="john@example.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Tell Us About Your Trip</label>
+          <textarea id="message" name="message" rows="5" placeholder="Where would you like to go? When are you planning to travel? Any special requests?" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-submit">Send Inquiry</button>
+      </form>
+
+      <div id="form-status" class="form-status" hidden></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 TravelEase. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
