@@ -195,3 +195,6 @@ Type `yes` to confirm. Terraform will remove all 19 resources.
 ---
 
 Made with ❤️ by Alan Le
+
+- LinkedIn: [linkedin.com/in/alantommyle](https://linkedin.com/in/alantommyle)
+- Portfolio: [elnala.com](https://elnala.com/)
