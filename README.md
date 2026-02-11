@@ -14,7 +14,7 @@ A serverless contact form solution for a travel agency, built with Terraform, AW
 
 ## Demo
 
-![TravelEase Contact Form](architecture/architecture-diagram.png)
+![TravelEase Contact Form](architecture/sc2.png)
 
 📝 **Read the full walkthrough:** [Project — Contact Form Site w/ AWS Lambda and more! - Medium Article](https://medium.com/@elnala24/project-contact-form-site-w-aws-lambda-and-more-3c7759f9c423)
 
